@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sceptres",
+	"version": "${version}",
+	"name": "Sceptres",
+	"description": "Adds some neat sceptres to your game!",
+	"authors": [
+		"inferno"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "APACHE 2.0",
+	"icon": "assets/sceptres/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.inferno.sceptres.SceptresMod"
+		],
+		"fabric-datagen": [
+			"net.inferno.sceptres.SceptresModDataGenerator"
+		],
+		"client": [
+			"net.inferno.sceptres.SceptresModClient"
+		]
+	},
+	"mixins": [
+		"sceptres.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
