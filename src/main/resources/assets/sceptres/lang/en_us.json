@@ -1,3 +1,8 @@
 {
-  "item.sceptres.golden_sceptre": "Golden Sceptre"
+  "item.sceptres.golden_sceptre": "Golden Sceptre",
+
+  "block.sceptres.chalk_test": "Raw Chalk",
+  "block.sceptres.adamantite_ore": "Adamantite Ore",
+
+  "itemgroup.sceptres.group": "Sceptres"
 }

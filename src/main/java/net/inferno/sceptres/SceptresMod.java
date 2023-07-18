@@ -2,6 +2,8 @@ package net.inferno.sceptres;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.inferno.sceptres.block.ModBlocks;
+import net.inferno.sceptres.item.ModItemGroup;
 import net.inferno.sceptres.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,8 +14,10 @@ public class SceptresMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroup.registerItemGroups();
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 	}
 }

@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.inferno.sceptres.SceptresMod;
+import net.inferno.sceptres.block.ModBlocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
@@ -21,6 +22,7 @@ public class ModItems {
 
     private static void itemGroupIngredients(FabricItemGroupEntries entries) {
         entries.add(GOLDEN_SCEPTRE);
+        entries.add(ModBlocks.CHALK_TEST);
     }
 
     public static void registerModItems() {
